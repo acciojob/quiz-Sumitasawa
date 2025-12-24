@@ -83,11 +83,8 @@
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `
-        <h2 style="padding:30px; text-align:center;">
-          You answered ${score}/${quizData.length} questions correctly
-        </h2>
-        <button onclick="location.reload()">Reload</button>
-      `;
+     quiz.innerHTML =
+  '<h2>You answered ' + score + '/' + quizData.length + ' questions correctly</h2>' +
+  '<button onclick="location.reload()">Reload</button>';
     }
   });
